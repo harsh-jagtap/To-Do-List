@@ -1,0 +1,120 @@
+/* common */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.font-Large {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.font-Mid {
+    font-size: 22px;
+}
+
+.font-Small {
+    font-size: 17px;
+}
+
+
+/* for body */
+
+body {
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    background-size: 500%;
+    animation: rotate 5s infinite alternate;
+}
+
+@keyframes rotate {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+
+/* for main */
+
+.mainBox {
+    width: 850px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+hr {
+    margin: 5px 0 20px 0;
+}
+
+
+/* for input information */
+
+.information {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.input {
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+
+/* for displaying information */
+
+.display {
+    padding: 20px;
+    margin: 20px 0 40px 0;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.card {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.cardDescription {
+    margin: 10px 0;
+}
+
+.cardDelete {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 8px 15px;
+}
+
+
+/* resopnsive common*/
+
+@media only screen and (max-width: 900px) {
+    .mainBox {
+        width: auto;
+        margin: 30px 50px;
+    }
+    .display {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .mainBox {
+        width: auto;
+        margin: 30px 10px;
+    }
+    .display {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List | Harshree Development</title>
+    <!-- navbar css -->
+    <link rel="stylesheet" href="navbar.css">
+    <!-- this page css -->
+    <link rel="stylesheet" href="To Do List.css">
+    <!-- external link - extra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8DN5TCP214"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-8DN5TCP214');
+    </script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="logoText"><a href="https://harsh-jagtap.github.io/Home-Page/">Harshree Development</a> </div>
+        <div id="category" class="resp">
+            <ul class="ul">
+                <li class="navi"><a href="https://harsh-jagtap.github.io/Home-Page/">Home</a></li>
+                <li class="navi"><a href="https://harsh-jagtap.github.io/My-Project/">My Project</a></li>
+                <li class="navi"><a href="#">Contact me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="mainBox">
+            <h1 class="font-Large">To-Do List</h1>
+            <hr>
+            <div>
+                <form class="information">
+                    <label class="font-Mid" for="title">Title </label>
+                    <input id="inputTitle" name="title" class="input" type="text" placeholder="Enter title here">
+                    <label class="font-Mid" for="description">Description</label>
+                    <textarea id="inputDescription" name="description" class="input" rows="6" placeholder="Enter description here"></textarea>
+                    <button id="inputSave" class="cardDelete font-Mid">Save</button>
+                </form>
+            </div>
+            <div id="displayCenter" class="display font-Mid">
+                <!-- here javascript is diplaying data from local storage -->
+            </div>
+        </div>
+    </section>
+
+
+</body>
+<script src="To Do List.js"></script>
+
+</html>
