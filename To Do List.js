@@ -55,7 +55,7 @@ function displayData() {
             const hi = dataArray[key];
             note += `<div class="card">
                 <div class="cardTitle">${hi.title}</div>
-                <pre class="cardDescription font-Small">${hi.description}</pre>
+                <div class="cardDescription font-Small">${hi.description}</div>
                 <button id="${key}" onclick="deleteNote(this.id)" class="cardDelete">Delete</button>
                 </div>`;
             main.innerHTML = note
